@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="navbar">
+        <img src="images/logo.png" alt="My Agency Logo" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Case Studies</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="get-started-button">
+          Get Started <img src="images/arrow.png" />
+        </button>
+        <img
+          src="images/menu-icon.png"
+          class="menu-icon"
+          onclick="togglemenu()"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="contact-form-container">
+        <h2>Let's Work Together!</h2>
+        <p class="third-paragraph">
+          Accelerate your online growth and work with a partner who truly values
+          your goals.
+        </p>
+        <form action="#" method="POST">
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+          ></textarea>
+          <div class="button-container">
+            <button type="button">
+              Send message <img src="images/arrow.png" />
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="My Agency Logo" />
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Case Study</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/be10xcreative" target="Facebook"
+                ><img src="images/facebook-logo.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/10x.creative"
+                target="Instagram"
+                ><img src="images/instagram-logo.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/10xcreative"
+                target="LinkedIn"
+                ><img src="images/linkedin-logo.png" alt="LinkedIn"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var menuList = document.getElementById("menuList");
+
+      menuList.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "160px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

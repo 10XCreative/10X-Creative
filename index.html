@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10X Creative | An Advertising Agency</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <style>
+      .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        background: linear-gradient(to right, #fb5283, #ff3527);
+        padding: 0;
+      }
+
+      .marquee-text {
+        display:flex;
+        animation: marqueeAnimation 15s linear infinite;
+        font-size: auto;
+        color: #fff;
+      }
+
+      @keyframes marqueeAnimation {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="marquee-container">
+      <p class="marquee-text">A Digital Marketing Agency based in Sri Lanka 🌴</p>
+    </div>
+    <header class="header-container">
+      <div class="navbar">
+        <a href="index.html">
+          <img src="images/logo.png" alt="My Agency Logo" class="logo" />
+        </a>
+        <nav>
+          <ul id="menuList">
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li>
+              <a
+                href="#"
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ajwadhameer2000/15min-meeting'});return false;"
+                >Schedule a call <img src="images/arrow.png"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <img
+          src="images/menu-icon.png"
+          class="menu-icon"
+          onclick="togglemenu()"
+        />
+      </div>
+    </header>
+    <main>
+      <h1>
+        Capture High-Quality Leads, Close <u>Unlimited Deals</u> and Double Your
+        ROI in Just 180 Days.
+      </h1>
+      <p class="first-paragraph">
+        Stop buying poor-quality leads, a dedicated sales funnel is all you
+        need. Whatever niche you're from, we will fill your pipeline with
+        qualified, 100% exclusive sales every single day...
+      </p>
+      <div class="button-container">
+        <button
+          type="button"
+          class="custom-button"
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ajwadhameer2000/15min-meeting'}); return false;"
+        >
+          Schedule a call <img src="images/arrow.png" />
+        </button>
+      </div>
+      <h2 class="gradient-heading">Driven by Data, Fueled by Passion</h2>
+      <section class="services">
+        <div class="service service-1">
+          <i class="fas fa-chart-line"></i>
+          <h4>Media Buying</h4>
+          <p class="second-paragraph">
+            As paid media pros, we are specialized in strategic media placement
+            to ensure your message reaches the right audience, at the right
+            time, and using the right channels.
+          </p>
+        </div>
+        <div class="service service-2">
+          <i class="fas fa-users"></i>
+          <h4>Lead Generation</h4>
+          <p class="second-paragraph">
+            Set up targeted campaigns, bid for the lowest cost-per-lead, and
+            capture high-quality leads that are easy to convert.
+          </p>
+        </div>
+        <div class="service service-3">
+          <i class="fas fa-funnel-dollar"></i>
+          <h4>Strategy and Sales Funnels</h4>
+          <p class="second-paragraph">
+            Develop a full sales funnel strategy that guides your audience from
+            awareness to conversion, ensuring no opportunity is left untapped.
+          </p>
+        </div>
+        <div class="service service-4">
+          <i class="fas fa-funnel-dollar"></i>
+          <h4>Product Sales</h4>
+          <p class="second-paragraph">
+            Discover your products online and showcase it on top online
+            marketplaces. Boost your sales revenue with strategic advertising.
+          </p>
+        </div>
+        <div class="service service-5">
+          <i class="fas fa-funnel-dollar"></i>
+          <h4>Social Media Marketing</h4>
+          <p class="second-paragraph">
+            Build a strong community on social media platforms. Engage with your
+            audience in real-time with useful content.
+          </p>
+        </div>
+        <div class="service service-6">
+          <i class="fas fa-funnel-dollar"></i>
+          <h4>Web Development</h4>
+          <p class="second-paragraph">
+            Create a professional and user-friendly website that serves as a
+            central hub for your services. Optimize it for search engines to
+            ensure maximum visibility.
+          </p>
+        </div>
+        <div class="service service-7">
+          <i class="fas fa-funnel-dollar"></i>
+          <h4>Visual Designing</h4>
+          <p class="second-paragraph">
+            Craft visually stunning images and videos to attract more audience
+            on social media platforms.
+          </p>
+        </div>
+        <div class="button-container">
+          <button
+            type="button"
+            class="custom-button"
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ajwadhameer2000/15min-meeting'}); return false;"
+          >
+            Schedule a call <img src="images/arrow.png" />
+          </button>
+        </div>
+      </section>
+      <section class="our-clients">
+        <div class="client-logos">
+          <img src="images/client1.png" alt="Client 1 Logo" />
+          <img src="images/client2.png" alt="Client 2 Logo" />
+          <img src="images/client3.png" alt="Client 3 Logo" />
+          <img src="images/client4.png" alt="Client 4 Logo" />
+        </div>
+      </section>
+      <section class="approach-section">
+        <p class="fourth-paragraph">SUCCESS IS INEVITABLE:</p>
+        <h3>APPROACH</h3>
+        <p class="fifth-paragraph">
+          4 Step Process We Use to Dominate Your Industry
+        </p>
+        <div class="approach-step deep-dive">
+          <div class="content">
+            <h5 class="approach-heading-2">STEP #1</h5>
+            <h4 class="approach-heading">DEEP DIVE</h4>
+            <p class="approach-description">
+              We conduct a thorough analysis and deep dive into your business,
+              so we can find the bottlenecks that are holding you back from
+              growth and scaling.
+            </p>
+          </div>
+          <div class="icon">
+            <img src="images/deep-dive.png" alt="Deep Dive Icon" />
+          </div>
+        </div>
+        <div class="approach-step strategic-planning">
+          <div class="content">
+            <h5 class="approach-heading-2">STEP #2</h5>
+            <h4 class="approach-heading">STRATEGIC PLANNING</h4>
+            <p class="approach-description">
+              Define a tailored strategy that aligns with your objectives,
+              ensuring a roadmap to sucess (revenue) that is easy to understand
+              and guide you through the process.
+            </p>
+          </div>
+          <div class="icon">
+            <img
+              src="images/strategic-planning.png"
+              alt="Strategic Planning Icon"
+            />
+          </div>
+        </div>
+        <div class="approach-step initial-launch">
+          <div class="content">
+            <h5 class="approach-heading-2">STEP #3</h5>
+            <h4 class="approach-heading">INITIAL LAUNCH</h4>
+            <p class="approach-description">
+              Approach camapaigns in different channels and ways to experiment
+              which brings quality results at the lowest bid.
+            </p>
+          </div>
+          <div class="icon">
+            <img src="images/initial-launch.png" alt="Initial Launch Icon" />
+          </div>
+        </div>
+        <div class="approach-step scaling">
+          <div class="content">
+            <h5 class="approach-heading-2">STEP #4</h5>
+            <h4 class="approach-heading">SCALING</h4>
+            <p class="approach-description">
+              Establish benchmarks and KPIs and start optimizing based on
+              performance. Spend more where we get the best results. With your
+              business goals in mind, we begin pushing forward to hit those
+              goals.
+            </p>
+          </div>
+          <div class="icon">
+            <img src="images/scaling.png" alt="Scaling Icon" />
+          </div>
+        </div>
+      </section>
+      <section id="contact-form" class="contact-form-container">
+        <h2>Let's Work Together!</h2>
+        <p class="third-paragraph">Write to us, lets do something great.</p>
+        <form action="process_form.php" method="POST">
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+          ></textarea>
+          <div class="button-container">
+            <button type="button">
+              Send message <img src="images/arrow.png" />
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="My Agency Logo" class="logo" />
+          </a>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="case-study.html">Case Study</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/be10xcreative" target="Facebook"
+                ><img src="images/facebook-logo.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/10x.creative"
+                target="Instagram"
+                ><img src="images/instagram-logo.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/10xcreative"
+                target="LinkedIn"
+                ><img src="images/linkedin-logo.png" alt="LinkedIn"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-details">
+        <p class="contact-number">+94 76 371 1125</p>
+        <p class="email-address">ajwad@tenxcreative.com</p>
+        <p class="office-address">
+          No.333, 3, 1 Galle Rd, Colombo 00300, Sri Lanka
+        </p>
+        <div class="company-name">
+          <p>10X Creative (Private) Limited</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var menuList = document.getElementById("menuList");
+      var menuIcon = document.querySelector(".menu-icon");
+
+      // Set initial state
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "200px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+
+      function closeMenu(event) {
+        // Check if the clicked element is not the menu icon or a descendant of the menu
+        if (
+          !menuIcon.contains(event.target) &&
+          !menuList.contains(event.target)
+        ) {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+
+      // Add click event listener to toggle menu
+      menuIcon.addEventListener("click", toggleMenu);
+
+      document.addEventListener("click", closeMenu);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+body {
+  font-family: "LexendDeca";
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  margin: 0 200px;
+}
+
+header {
+  padding: 10px 0;
+}
+
+.header-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: auto;
+  margin-right: 30px;
+}
+
+nav a {
+  font-family: "LexendDeca-ExtraLight";
+  src: url("fonts/LexendDeca-ExtraLight.ttf") format("truetype");
+  text-decoration: none;
+  color: #60b47c;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #001f48;
+  text-decoration: none;
+}
+
+.contact-form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(96, 180, 124, 0.5);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #60b47c;
+}
+
+.contact-form-container h2 {
+  color: #000000;
+  font-family: "LexendDeca-Bold";
+  src: url("fonts/LexendDeca-Bold.ttf") format("truetype");
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 15px;
+  color: #737373;
+  font-family: "LexendDeca-ExtraLight";
+  src: url("fonts/LexendDeca-ExtraLight.ttf") format("truetype");
+  font-size: 15px;
+  display: block;
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #60b47c;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: "LexendDeca-ExtraLight";
+  src: url("fonts/LexendDeca-ExtraLight.ttf") format("truetype");
+}
+
+button {
+  background-color: #001f48;
+  color: #ffffff;
+  padding: 13px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid #60b47c;
+  font-family: "LexendDeca-Bold";
+  src: url("fonts/LexendDeca-Bold.ttf") format("truetype");
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #60b47c;
+  color: #001f48;
+}

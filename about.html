@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10X Creative | An Advertising Agency</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <style>
+      .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        background: linear-gradient(to right, #fb5283, #ff3527);
+        padding: 0;
+      }
+
+      .marquee-text {
+        display: flex;
+        animation: marqueeAnimation 15s linear infinite;
+        font-size: auto;
+        color: #fff;
+      }
+
+      @keyframes marqueeAnimation {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="about-section">
+      <header class="header-container">
+        <div class="navbar">
+          <a href="index.html">
+            <img src="images/logo.png" alt="My Agency Logo" class="logo" />
+          </a>
+          <nav>
+            <ul id="menuList">
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li>
+                <a
+                  href="#"
+                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ajwadhameer2000/15min-meeting'});return false;"
+                  >Schedule a call <img src="images/arrow.png"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+          <img
+            src="images/menu-icon.png"
+            class="menu-icon"
+            onclick="togglemenu()"
+          />
+        </div>
+      </header>
+      <h2>Meet the Team</h2>
+      <p>
+        10X Creative is a digital marketing agency based in Colombo, Sri Lanka.
+        We are a team of dedicated young entrepreneurs with the primary goal of
+        helping service-based businesses grow by utilizing digital means.
+      </p>
+      <div class="meet-the-team">
+        <div class="team">
+          <h4>Ajwad | Founder</h4>
+          <img src="images/ajwad.png" alt="Ajwad" />
+          <h4>Tharsheen | Co-Founder</h4>
+          <img src="images/tharsheen.png" alt="Ajwad" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="My Agency Logo" class="logo" />
+          </a>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="case-study.html">Case Study</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/be10xcreative" target="Facebook"
+                ><img src="images/facebook-logo.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/10x.creative"
+                target="Instagram"
+                ><img src="images/instagram-logo.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/10xcreative"
+                target="LinkedIn"
+                ><img src="images/linkedin-logo.png" alt="LinkedIn"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-details">
+        <p class="contact-number">+94 76 371 1125</p>
+        <p class="email-address">ajwad@tenxcreative.com</p>
+        <p class="office-address">
+          No.333, 3, 1 Galle Rd, Colombo 00300, Sri Lanka
+        </p>
+        <div class="company-name">
+          <p>10X Creative (Private) Limited</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var menuList = document.getElementById("menuList");
+      var menuIcon = document.querySelector(".menu-icon");
+
+      // Set initial state
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "200px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+
+      function closeMenu(event) {
+        // Check if the clicked element is not the menu icon or a descendant of the menu
+        if (
+          !menuIcon.contains(event.target) &&
+          !menuList.contains(event.target)
+        ) {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+
+      // Add click event listener to toggle menu
+      menuIcon.addEventListener("click", toggleMenu);
+
+      document.addEventListener("click", closeMenu);
+    </script>
+  </body>
+</html>
